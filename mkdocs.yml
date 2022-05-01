@@ -1,0 +1,7 @@
+site_name: CSE 12X Self-Placement
+
+docs_dir: src
+
+theme:
+  name: null
+  custom_dir: theme
