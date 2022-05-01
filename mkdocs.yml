@@ -5,3 +5,10 @@ docs_dir: src
 theme:
   name: null
   custom_dir: theme
+  include_search_page: false
+  search_index_only: false
+  favicon: false
+
+plugins:
+    - macros:
+        include_dir: includes
