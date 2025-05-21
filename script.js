@@ -194,6 +194,9 @@ function showQuestion(event, prev, target) {
     // hide results
     $('.result').hide();
 
+    // hide recruitment
+    $('#recruit').hide();
+
     if (target) {
         target.show();
         target.children().show();
@@ -208,6 +211,7 @@ function showQuestion(event, prev, target) {
 	        learn.show();
 	    }
 
+	    $('#recruit').show();
 
             $('#result-hidden').text(target.attr('id'));
             saveData(event)
