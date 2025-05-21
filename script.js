@@ -202,6 +202,13 @@ function showQuestion(event, prev, target) {
         $("html, body").animate({ scrollTop: $(document).height()}, "fast", "linear");
 
         if (target.hasClass('result')) {
+	    if (!target.find("#learn-more").length) {
+	    	learn = $('#learn-more').clone();
+	    	learn.appendTo(target);
+	        learn.show();
+	    }
+
+
             $('#result-hidden').text(target.attr('id'));
             saveData(event)
         }
